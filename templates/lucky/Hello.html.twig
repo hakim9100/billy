@@ -1,0 +1,14 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Word{% endblock %}
+
+{% block body %}
+    <h1>Hello World {{ Hello }}</h1>
+    {% for language in languages %}
+
+    <p>{{ language }}</p>
+
+{% endfor %}
+    <p>ip: {{ ip }}</p>
+{% endblock %}
