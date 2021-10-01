@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nom{% endblock %}
+
+{% block body %}
+    <p>Hello {{ nom.0 }}
+
+    {% if nom.1 %}
+        - ({{ nom.0 }} {% apply upper %} {{ nom.1 }}  {% endapply %}) </p>
+    {% endif %}
+{% endblock %}
